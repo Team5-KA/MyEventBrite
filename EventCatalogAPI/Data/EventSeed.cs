@@ -12,11 +12,11 @@ namespace EventCatalogAPI.Data
         public static void Seed(EventContext eventContext)
         {
             eventContext.Database.Migrate();
-        /*  if (eventContext.EventItems.Any())
+            if (eventContext.EventItems.Any())
             {
                 eventContext.EventItems.RemoveRange(eventContext.EventItems);
                 eventContext.SaveChanges();
-            }   */
+            }   
             if (!eventContext.EventItems.Any()) 
             {
                 eventContext.EventItems.AddRange(GetEventItems());
@@ -35,6 +35,9 @@ namespace EventCatalogAPI.Data
                 new EventItem {Title="Father's Day Special Brunch",Description="Let us serve you our All-you-can-eat brunch favorites this Father's day",PictureUrl="http://externaleventbaseurltobereplaced/api/pic/4"},
                 new EventItem {Title="Dad & Daughter Dance Party",Description="Dads, this is an opportunity for you to express your love for your daughter and to show her that she is a special treasure who deserves to be treated with kindness and respect. This formal event is for dads and daughters of all ages!",PictureUrl="http://externaleventbaseurltobereplaced/api/pic/5"},
                 new EventItem {Title="Father's Day Extravaganza!",Description="Join us for a day full of fun activities for families. Activities are free for Dads on the occasion of Father's day.",PictureUrl="http://externaleventbaseurltobereplaced/api/pic/6"},
+                new EventItem{Title="JazzFest",Description="Enjoy Wonderful Live Music while having Lunch or coffee, soft Latin sounds with some Motown thrown in for Fun!",PictureUrl="http://externaleventbaseurltobereplaced/api/pic/7"},
+                new EventItem{Title="Ariana Grande Virtual Concert",Description="Ariana grande is performing at the first of its kind Virtual Concert on August 5! Be the first person to book your tickets!",PictureUrl="http://externaleventbaseurltobereplaced/api/pic/8"},
+                new EventItem{Title="Free Songwriters Workshop",Description="This free online songwriting workshop for non-professional songwriters will be a fun challenge. Get free songwriting tips and techniques from passionate fellow songwriters from all around the world.",PictureUrl="http://externaleventbaseurltobereplaced/api/pic/9"},
             };
 
         }
