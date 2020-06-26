@@ -1,11 +1,11 @@
-﻿using System;
+﻿using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Mvc;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
-using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Mvc;
 
 namespace EventCatalogAPI.Controllers
 {
@@ -13,7 +13,6 @@ namespace EventCatalogAPI.Controllers
     [ApiController]
     public class PicController : ControllerBase
     {
-
         private readonly IWebHostEnvironment _env;
 
         public PicController(IWebHostEnvironment env)

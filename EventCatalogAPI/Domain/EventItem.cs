@@ -12,19 +12,23 @@ namespace EventCatalogAPI.Domain
         public string Description { get; set; }
         public string PictureUrl { get; set; }
 
-    /*  public int EventTypeId { get; set; }
+        public int EventTypeId { get; set; }
         public int EventCategoryId { get; set; }
         public int EventSubCategoryId { get; set; }
-
-        public int EventOrganizerId { get; set; }
 
         public EventType EventType { get; set; }
         public EventCategory EventCategory { get; set; }
         public EventSubCategory EventSubCategory { get; set; }
 
-        public EventLocation EventLocation { get; set; }
-        public EventDateAndTime EventDateAndTime { get; set; }
 
-        public EventOrganizer EventOrganizer { get; set; }  */
+        // public int EventDateAndTimeId { get; set; }
+        // public int EventLocationId { get; set; }
+
+       // public EventDateAndTime EventDateAndTime { get; set; }
+        //public EventLocation EventLocation { get; set; }
+
+        //public int EventOrganizerID { get; set; }
+
+        //public EventOrganizer EventOrganizer { get; set; }
     }
 }
